@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96BAC7"
+    tools:context=".MainFrag">
+
+    <TextView
+        android:id="@+id/cats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="NAME, CATEGORY, DATE, AMOUNT, NOTE, ID"
+        android:textSize="20sp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/cats"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="731dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/recView"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="56dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="42dp" />
+</FrameLayout>

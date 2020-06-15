@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Expenses</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_fire_missiles">!!!!</string>
+    <string name="fire">oh no</string>
+    <string name="cancel">uh oh</string>
+</resources>
